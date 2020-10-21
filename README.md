@@ -6,13 +6,6 @@
   A DNS server for ZeroTier virtual networks.
 </h4>
 
-<p align="center">
-  <a href="https://github.com/flukschander/zerotier-dns">
-    <img src="https://github.comflukschander/zerotier-dns/workflows/Check/badge.svg"
-         alt="Github Actions">
-  </a>
-</p>
-
 This is a fork of [uxbh/ztdns](https://github.com/uxbh/ztdns) / [johannrichard/zerotier-dns](https://github.com/johannrichard/zerotier-dns)
 
 
