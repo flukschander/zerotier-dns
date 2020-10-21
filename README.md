@@ -7,13 +7,13 @@
 </h4>
 
 <p align="center">
-  <a href="https://github.com/mje-nz/zerotier-dns">
-    <img src="https://github.com/mje-nz/zerotier-dns/workflows/Check/badge.svg"
+  <a href="https://github.com/flukschander/zerotier-dns">
+    <img src="https://github.comflukschander/zerotier-dns/workflows/Check/badge.svg"
          alt="Github Actions">
   </a>
 </p>
 
-This is a fork of [uxbh/ztdns](https://github.com/uxbh/ztdns).
+This is a fork of [uxbh/ztdns](https://github.com/uxbh/ztdns) / [johannrichard/zerotier-dns](https://github.com/johannrichard/zerotier-dns)
 
 
 
@@ -65,9 +65,9 @@ In practise this means either configuring the system resolver on each machine to
 To build from source:
 
 ``` bash
-go get -u github.com/mje-nz/zerotier-dns/
+go get -u github.com/flukschander/zerotier-dns/
 # or
-git clone https://github.com/mje-nz/zerotier-dns.git
+git clone https://github.com/flukschander/zerotier-dns.git
 cd zerotier-dns
 go install
 # then
@@ -92,7 +92,7 @@ docker run --detach \
   -p 53:53/udp \
   --volume $(pwd)/zerotier-dns.yml:/app/zerotier-dns.yml \
   --restart=unless-stopped \
-  --name=zerotier-dns mjenz/zerotier-dns
+  --name=zerotier-dns flukschander/zerotier-dns
 ```
 
 
@@ -182,7 +182,7 @@ port: 53
 # Base domain.  Could be a top-level domain for internal use only (e.g., zt) or
 # a domain name with one or more subdomains (e.g., internal.yourdomain.com).
 # By default, map members to "<member name>.zt".
-origin: "zt"
+domain: "zt"
 
 # How often to poll the ZeroTier controller in minutes.
 refresh: 30
