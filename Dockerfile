@@ -3,7 +3,7 @@ FROM golang:${GO_VERSION} AS builder
 
 RUN useradd zerotier-dns
 
-WORKDIR /go/src/github.com/mje-nz/zerotier-dns
+WORKDIR /go/src/github.com/flukschander/zerotier-dns
 
 # Fetch and cache dependencies
 COPY ./go.mod ./go.sum ./
