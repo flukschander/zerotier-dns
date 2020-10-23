@@ -28,7 +28,7 @@ To start the server using the Docker image:
 docker run --rm \
   -p 53:53/udp \
   --volume $(pwd)/zerotier-dns.yml:/app/zerotier-dns.yml \
-  mjenz/zerotier-dns server --api-key API_KEY --network NETWORK_ID
+  flukschander/zerotier-dns server --api-key API_KEY --network NETWORK_ID
 ```
 
 where `API_KEY` is a ZeroTier API token and `NETWORK_ID` is a ZeroTier network ID.
